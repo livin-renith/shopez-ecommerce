@@ -7,12 +7,12 @@
 ## DEMO AND GITHUB REPOSITORY LINKS
 
 > [!IMPORTANT]
-> **For Mentor Review and Project Evaluation**:
-> - 🌐 **Live Demo URL**: [https://shopez-demo.vercel.app](https://shopez-demo.vercel.app)
-> - 📦 **GitHub Repository**: [https://github.com/shopez-retail/shopez-ecommerce](https://github.com/shopez-retail/shopez-ecommerce)
+> - ⚡ **Live Render Backend API**: [https://shopez-backend-2938.onrender.com](https://shopez-backend-2938.onrender.com)
+> - 📦 **GitHub Repository**: [https://github.com/livin-renith/shopez-ecommerce](https://github.com/livin-renith/shopez-ecommerce)
 > - 🔑 **Pre-configured Admin Account**:
 >   - **Account Email**: `admin@gmail.com`
 >   - **Password**: `admin123`
+
 
 ---
 
@@ -237,7 +237,8 @@ npm run dev
 
 ## DEMO & EVALUATION LINKS SUMMARY
 
-- **GitHub Repository**: [https://github.com/shopez-retail/shopez-ecommerce](https://github.com/shopez-retail/shopez-ecommerce)
-- **Live Demo Link**: [https://shopez-demo.vercel.app](https://shopez-demo.vercel.app)
+- **GitHub Repository**: [https://github.com/livin-renith/shopez-ecommerce](https://github.com/livin-renith/shopez-ecommerce)
+- **Live Render Backend API**: [https://shopez-backend-2938.onrender.com](https://shopez-backend-2938.onrender.com)
 - **Admin Email**: `admin@gmail.com`
 - **Admin Password**: `admin123`
+

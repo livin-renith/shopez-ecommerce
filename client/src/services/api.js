@@ -1,8 +1,12 @@
 import axios from 'axios';
 
+// Use VITE_API_URL, production Render API, or local proxy /api
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://shopez-backend-2938.onrender.com' : '/api');
+
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL.replace(/\/$/, '')}/api` : '/api',
+  baseURL: API_BASE.endsWith('/api') ? API_BASE : `${API_BASE.replace(/\/$/, '')}/api`,
 });
+
 
 
 // Request interceptor to attach JWT token
