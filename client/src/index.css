@@ -241,3 +241,72 @@ input, select, textarea {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+/* ==================== MOBILE & RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Responsive Navigation Bar */
+  .glass-nav .container {
+    height: auto !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    gap: 0.75rem !important;
+    flex-wrap: wrap !important;
+  }
+
+  .glass-nav nav {
+    gap: 1rem !important;
+  }
+
+  /* Typography Scale for Mobile */
+  h1 {
+    font-size: 1.85rem !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Glass Panels & Cards Mobile Padding */
+  .glass-panel {
+    padding: 1.25rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Touch-friendly buttons */
+  .glass-btn {
+    padding: 0.65rem 1.1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Responsive Data Tables for Admin & Order Pages */
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .glass-nav .container {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
