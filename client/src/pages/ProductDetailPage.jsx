@@ -160,9 +160,9 @@ const ProductDetailPage = () => {
 
           {/* Rating */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#fcd34d' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#facc15' }}>
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={16} fill={i < Math.floor(product.rating || 4.8) ? "#fcd34d" : "transparent"} color="#fcd34d" />
+                <Star key={i} size={16} fill={i < Math.floor(product.rating || 4.8) ? "#facc15" : "transparent"} color="#facc15" />
               ))}
             </div>
             <span style={{ color: '#fff', fontWeight: '700', fontSize: '0.9rem' }}>{product.rating || 4.8}</span>
@@ -171,7 +171,7 @@ const ProductDetailPage = () => {
 
           {/* Price Box */}
           <div className="glass-panel" style={{ padding: '1.25rem', marginBottom: '1.75rem', display: 'flex', alignItems: 'baseline', gap: '1rem' }}>
-            <span style={{ fontSize: '2.25rem', fontWeight: '900', color: '#818cf8' }}>
+            <span style={{ fontSize: '2.25rem', fontWeight: '900', color: '#60a5fa' }}>
               ${discountedPrice}
             </span>
             {product.discount > 0 && (
@@ -256,9 +256,9 @@ const ProductDetailPage = () => {
                 width: '100%',
                 padding: '0.85rem',
                 fontSize: '1rem',
-                color: '#f472b6',
-                borderColor: 'rgba(236, 72, 153, 0.4)',
-                background: 'rgba(236, 72, 153, 0.1)',
+                color: '#facc15',
+                borderColor: 'rgba(245, 158, 11, 0.4)',
+                background: 'rgba(245, 158, 11, 0.1)',
                 fontWeight: '700'
               }}
             >

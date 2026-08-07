@@ -118,11 +118,11 @@ const HomePage = () => {
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
         gap: '2rem',
-        background: 'linear-gradient(135deg, rgba(18, 24, 38, 0.8) 0%, rgba(9, 13, 22, 0.9) 100%)',
+        background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(7, 10, 18, 0.95) 100%)',
         borderColor: 'rgba(255, 255, 255, 0.15)'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(99, 102, 241, 0.15)', color: '#818cf8', boxShadow: '0 0 15px rgba(99,102,241,0.2)' }}>
+          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(37, 99, 235, 0.18)', color: '#60a5fa', boxShadow: '0 0 15px rgba(37,99,235,0.25)' }}>
             <Truck size={28} />
           </div>
           <div>
@@ -132,7 +132,7 @@ const HomePage = () => {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(236, 72, 153, 0.15)', color: '#f472b6', boxShadow: '0 0 15px rgba(236,72,153,0.2)' }}>
+          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(245, 158, 11, 0.18)', color: '#facc15', boxShadow: '0 0 15px rgba(245,158,11,0.25)' }}>
             <ShieldCheck size={28} />
           </div>
           <div>
@@ -142,7 +142,7 @@ const HomePage = () => {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(6, 182, 212, 0.15)', color: '#22d3ee', boxShadow: '0 0 15px rgba(6,182,212,0.2)' }}>
+          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(56, 189, 248, 0.18)', color: '#38bdf8', boxShadow: '0 0 15px rgba(56,189,248,0.25)' }}>
             <RefreshCw size={28} />
           </div>
           <div>
@@ -152,7 +152,7 @@ const HomePage = () => {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24', boxShadow: '0 0 15px rgba(245,158,11,0.2)' }}>
+          <div style={{ padding: '0.85rem', borderRadius: '16px', background: 'rgba(245, 158, 11, 0.2)', color: '#facc15', boxShadow: '0 0 15px rgba(245,158,11,0.3)' }}>
             <Zap size={28} />
           </div>
           <div>
@@ -165,7 +165,7 @@ const HomePage = () => {
       {/* 3. Category Grid Showcase */}
       <div style={{ marginBottom: '4.5rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#818cf8', marginBottom: '0.4rem' }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#60a5fa', marginBottom: '0.4rem' }}>
             <Sparkles size={18} />
             <span style={{ fontSize: '0.85rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
               BROWSE BY CATEGORY
@@ -223,7 +223,7 @@ const HomePage = () => {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                background: 'linear-gradient(0deg, rgba(9, 13, 22, 0.95) 0%, rgba(9, 13, 22, 0.4) 60%, transparent 100%)'
+                background: 'linear-gradient(0deg, rgba(7, 10, 18, 0.95) 0%, rgba(7, 10, 18, 0.4) 60%, transparent 100%)'
               }} />
 
               {/* Content Overlay */}
@@ -243,7 +243,7 @@ const HomePage = () => {
                   {cat.desc}
                 </p>
 
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: '#818cf8', fontWeight: '700', fontSize: '0.85rem' }}>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: '#60a5fa', fontWeight: '700', fontSize: '0.85rem' }}>
                   Explore Collection <ArrowRight size={15} />
                 </div>
               </div>
@@ -257,13 +257,13 @@ const HomePage = () => {
         <div style={{ marginBottom: '4.5rem' }}>
           <div className="glass-panel" style={{
             padding: '2.5rem',
-            background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.12) 0%, rgba(99, 102, 241, 0.15) 100%)',
-            borderColor: 'rgba(236, 72, 153, 0.3)'
+            background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(37, 99, 235, 0.15) 100%)',
+            borderColor: 'rgba(245, 158, 11, 0.35)'
           }}>
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '2rem' }}>
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#f472b6', marginBottom: '0.25rem' }}>
-                  <Flame size={20} color="#ec4899" />
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#facc15', marginBottom: '0.25rem' }}>
+                  <Flame size={20} color="#facc15" />
                   <span style={{ fontSize: '0.85rem', fontWeight: '800', letterSpacing: '0.12em' }}>LIMITED TIME OFFER</span>
                 </div>
                 <h2 style={{ fontSize: '2.2rem', color: '#fff', fontWeight: '900' }}>Today's Top Flash Discounts</h2>
@@ -291,7 +291,7 @@ const HomePage = () => {
       <div style={{ marginBottom: '4.5rem' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', marginBottom: '2rem' }}>
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#818cf8', marginBottom: '0.25rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#60a5fa', marginBottom: '0.25rem' }}>
               <Award size={18} />
               <span style={{ fontSize: '0.85rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 LIVE STORE CATALOG
@@ -310,7 +310,7 @@ const HomePage = () => {
                 style={{
                   padding: '0.55rem 1.25rem',
                   fontSize: '0.9rem',
-                  background: selectedCategory === cat ? 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)' : 'rgba(255, 255, 255, 0.05)',
+                  background: selectedCategory === cat ? 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)' : 'rgba(255, 255, 255, 0.05)',
                   color: selectedCategory === cat ? '#fff' : 'var(--text-muted)',
                   borderColor: selectedCategory === cat ? 'var(--primary)' : 'var(--border-glass)',
                   boxShadow: selectedCategory === cat ? '0 0 15px var(--primary-glow)' : 'none'
@@ -348,8 +348,8 @@ const HomePage = () => {
       {/* 6. Customer Testimonials Section */}
       <div style={{ marginBottom: '4.5rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#ec4899', marginBottom: '0.4rem' }}>
-            <Heart size={18} color="#ec4899" fill="#ec4899" />
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#facc15', marginBottom: '0.4rem' }}>
+            <Heart size={18} color="#facc15" fill="#facc15" />
             <span style={{ fontSize: '0.85rem', fontWeight: '800', letterSpacing: '0.1em' }}>HAPPY SHOPPERS</span>
           </div>
           <h2 style={{ fontSize: '2.2rem', color: '#fff', fontWeight: '900' }}>What Our Customers Say</h2>
@@ -363,9 +363,9 @@ const HomePage = () => {
           {testimonials.map((t) => (
             <div key={t.id} className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
-                <div style={{ display: 'flex', gap: '0.25rem', color: '#fcd34d', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', gap: '0.25rem', color: '#facc15', marginBottom: '1rem' }}>
                   {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} size={16} fill="#fcd34d" color="#fcd34d" />
+                    <Star key={i} size={16} fill="#facc15" color="#facc15" />
                   ))}
                 </div>
                 <p style={{ color: '#cbd5e1', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1.5rem', italic: 'true' }}>
@@ -391,8 +391,8 @@ const HomePage = () => {
       <div className="glass-panel" style={{
         padding: '3.5rem 2.5rem',
         textAlign: 'center',
-        background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%)',
-        borderColor: 'rgba(99, 102, 241, 0.35)',
+        background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.22) 0%, rgba(245, 158, 11, 0.15) 100%)',
+        borderColor: 'rgba(37, 99, 235, 0.4)',
         position: 'relative',
         overflow: 'hidden'
       }}>

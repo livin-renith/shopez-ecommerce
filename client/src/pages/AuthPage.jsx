@@ -56,14 +56,14 @@ const AuthPage = () => {
         
         {/* Mentor Evaluation Helper Box */}
         <div style={{
-          background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%)',
-          border: '1px solid rgba(236, 72, 153, 0.3)',
+          background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.18) 0%, rgba(37, 99, 235, 0.18) 100%)',
+          border: '1px solid rgba(245, 158, 11, 0.35)',
           borderRadius: 'var(--radius-md)',
           padding: '1rem',
           marginBottom: '1.75rem',
           textAlign: 'center'
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', color: '#f472b6', fontWeight: '700', fontSize: '0.85rem', marginBottom: '0.4rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', color: '#facc15', fontWeight: '700', fontSize: '0.85rem', marginBottom: '0.4rem' }}>
             <ShieldAlert size={16} /> MENTOR REVIEW QUICK LOGIN
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginBottom: '0.75rem' }}>
@@ -77,9 +77,9 @@ const AuthPage = () => {
               width: '100%',
               padding: '0.5rem',
               fontSize: '0.85rem',
-              background: 'rgba(236, 72, 153, 0.2)',
-              color: '#fff',
-              borderColor: 'rgba(236, 72, 153, 0.4)',
+              background: 'rgba(245, 158, 11, 0.25)',
+              color: '#ffffff',
+              borderColor: 'rgba(245, 158, 11, 0.45)',
               fontWeight: '700'
             }}
           >

@@ -119,7 +119,7 @@ const HeroBanner = () => {
         left: 0,
         width: '100%',
         height: '100%',
-        background: 'linear-gradient(90deg, rgba(9, 13, 22, 0.95) 0%, rgba(9, 13, 22, 0.75) 55%, rgba(9, 13, 22, 0.3) 100%)'
+        background: 'linear-gradient(90deg, rgba(7, 10, 18, 0.96) 0%, rgba(7, 10, 18, 0.8) 55%, rgba(7, 10, 18, 0.45) 100%)'
       }} />
 
       {/* Content Inner Container */}
@@ -138,7 +138,7 @@ const HeroBanner = () => {
         <div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1.25rem' }}>
             <span className="badge badge-secondary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', padding: '0.35rem 0.85rem' }}>
-              <Flame size={14} color="#fff" /> {slide.badge}
+              <Flame size={14} color="#facc15" /> {slide.badge}
             </span>
             <span className="badge badge-primary" style={{ padding: '0.35rem 0.85rem' }}>
               {slide.discount}
@@ -149,7 +149,7 @@ const HeroBanner = () => {
             fontSize: '3rem',
             lineHeight: '1.1',
             marginBottom: '1rem',
-            color: '#fff',
+            color: '#ffffff',
             fontWeight: '900',
             letterSpacing: '-0.02em',
             textShadow: '0 4px 20px rgba(0,0,0,0.6)'
@@ -185,18 +185,18 @@ const HeroBanner = () => {
             padding: '1.75rem',
             maxWidth: '340px',
             width: '100%',
-            background: 'rgba(18, 24, 38, 0.85)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
-            boxShadow: '0 10px 30px rgba(0,0,0,0.5)'
+            background: 'rgba(15, 23, 42, 0.9)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
+            boxShadow: '0 10px 30px rgba(0,0,0,0.6)'
           }}>
             
             {/* Rating */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
-              <span style={{ fontSize: '0.75rem', color: '#818cf8', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+              <span style={{ fontSize: '0.75rem', color: '#60a5fa', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                 FEATURED ITEM
               </span>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#fcd34d', fontSize: '0.85rem', fontWeight: '700' }}>
-                <Star size={14} fill="#fcd34d" color="#fcd34d" />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#facc15', fontSize: '0.85rem', fontWeight: '700' }}>
+                <Star size={14} fill="#facc15" color="#facc15" />
                 <span>{slide.rating}</span>
                 <span style={{ color: 'var(--text-dim)', fontSize: '0.75rem' }}>({slide.reviews})</span>
               </div>
@@ -204,7 +204,7 @@ const HeroBanner = () => {
 
             {/* Price Box */}
             <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '1.25rem' }}>
-              <span style={{ fontSize: '2rem', fontWeight: '900', color: '#fff' }}>
+              <span style={{ fontSize: '2rem', fontWeight: '900', color: '#ffffff' }}>
                 {slide.price}
               </span>
               <span style={{ fontSize: '1rem', color: 'var(--text-dim)', textDecoration: 'line-through' }}>
@@ -214,13 +214,13 @@ const HeroBanner = () => {
 
             {/* Countdown Box */}
             <div style={{
-              background: 'rgba(0, 0, 0, 0.3)',
+              background: 'rgba(0, 0, 0, 0.4)',
               borderRadius: 'var(--radius-md)',
               padding: '0.75rem 1rem',
               border: '1px solid var(--border-glass)',
               marginBottom: '1.25rem'
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#f472b6', fontSize: '0.75rem', fontWeight: '800', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#facc15', fontSize: '0.75rem', fontWeight: '800', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                 <Clock size={14} /> Flash Deal Ends In:
               </div>
               
@@ -240,8 +240,8 @@ const HeroBanner = () => {
               </div>
             </div>
 
-            <Link to={slide.link} className="glass-btn btn-primary" style={{ width: '100%', padding: '0.7rem', fontSize: '0.9rem', fontWeight: '700' }}>
-              <Zap size={16} color="#fff" /> Shop Item Now
+            <Link to={slide.link} className="glass-btn btn-accent" style={{ width: '100%', padding: '0.75rem', fontSize: '0.95rem', fontWeight: '800' }}>
+              <Zap size={16} color="#070a12" /> Shop Item Now
             </Link>
 
           </div>

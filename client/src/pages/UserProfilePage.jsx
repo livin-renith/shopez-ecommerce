@@ -60,8 +60,8 @@ const UserProfilePage = () => {
         <div className="glass-panel" style={{ padding: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <div style={{ width: '56px', height: '56px', borderRadius: '16px', background: isAdmin ? 'linear-gradient(135deg, #ec4899 0%, #be185d 100%)' : 'linear-gradient(135deg, #6366f1 0%, #4338ca 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-                {isAdmin ? <ShieldCheck size={28} /> : <User size={28} />}
+              <div style={{ width: '56px', height: '56px', borderRadius: '16px', background: isAdmin ? 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)' : 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
+                {isAdmin ? <ShieldCheck size={28} color="#070a12" /> : <User size={28} />}
               </div>
               <div>
                 <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>{user?.name}</h3>
@@ -115,18 +115,20 @@ const UserProfilePage = () => {
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', color: 'var(--text-muted)', fontSize: '0.95rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                <Mail size={18} color="#818cf8" />
-                <span>{user?.email}</span>
+                <Mail size={18} color="#60a5fa" />
+                <span style={{ fontSize: '0.9rem' }}>{user?.email}</span>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                <Phone size={18} color="#818cf8" />
-                <span>{user?.mobile || 'No mobile added'}</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-muted)' }}>
+                <Phone size={18} color="#60a5fa" />
+                <span style={{ fontSize: '0.9rem' }}>{user?.mobile || 'Not specified'}</span>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-                <MapPin size={18} color="#818cf8" style={{ marginTop: '3px' }} />
-                <span>{user?.address ? `${user.address} (Pincode: ${user.pincode})` : 'No default shipping address set'}</span>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-muted)' }}>
+                <MapPin size={18} color="#60a5fa" style={{ marginTop: '3px' }} />
+                <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
+                  {user?.address ? `${user.address} (Pincode: ${user.pincode || 'N/A'})` : 'No shipping address saved'}
+                </span>
               </div>
             </div>
           )}
@@ -135,8 +137,8 @@ const UserProfilePage = () => {
         {/* Right Order History List */}
         <div>
           <div className="glass-panel" style={{ padding: '2rem' }}>
-            <h3 style={{ color: '#fff', marginBottom: '1.5rem', fontSize: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Package size={22} color="#ec4899" /> Order History ({orders.length})
+            <h3 style={{ color: '#fff', marginBottom: '1.5rem', fontSize: '1.3rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <Package size={22} color="#facc15" /> Order History ({orders.length})
             </h3>
 
             {loadingOrders ? (
@@ -159,7 +161,7 @@ const UserProfilePage = () => {
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', marginBottom: '0.75rem' }}>
                       <div>
                         <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', display: 'block' }}>
-                          ORDER ID: <code style={{ color: '#a5b4fc' }}>#{order._id.substring(order._id.length - 8)}</code>
+                          ORDER ID: <code style={{ color: '#93c5fd' }}>#{order._id.substring(order._id.length - 8)}</code>
                         </span>
                         <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>
                           {new Date(order.createdAt).toLocaleDateString()} at {new Date(order.createdAt).toLocaleTimeString()}
@@ -187,7 +189,7 @@ const UserProfilePage = () => {
                       <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
                         Payment: <strong style={{ color: '#fff' }}>{order.paymentMethod}</strong>
                       </span>
-                      <span style={{ fontSize: '1.1rem', fontWeight: '800', color: '#818cf8' }}>
+                      <span style={{ fontSize: '1.1rem', fontWeight: '800', color: '#60a5fa' }}>
                         Total: ${order.totalAmount?.toFixed(2)}
                       </span>
                     </div>

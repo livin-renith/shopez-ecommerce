@@ -72,7 +72,7 @@ const CartPage = () => {
     return (
       <div className="container" style={{ paddingTop: '4rem', textAlign: 'center' }}>
         <div className="glass-panel" style={{ padding: '4rem 2rem', maxWidth: '600px', margin: '0 auto' }}>
-          <div style={{ width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(99, 102, 241, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem auto', color: '#818cf8' }}>
+          <div style={{ width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(37, 99, 235, 0.18)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem auto', color: '#60a5fa' }}>
             <ShoppingBag size={36} />
           </div>
           <h2 style={{ color: '#fff', marginBottom: '0.75rem' }}>Your Shopping Cart is Empty</h2>
@@ -106,7 +106,7 @@ const CartPage = () => {
         <div>
           <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
             <h3 style={{ color: '#fff', marginBottom: '1.25rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <ShoppingBag size={20} color="#818cf8" /> Order Items ({cartItems.length})
+              <ShoppingBag size={20} color="#60a5fa" /> Order Items ({cartItems.length})
             </h3>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -133,8 +133,8 @@ const CartPage = () => {
                     <div style={{ flexGrow: 1 }}>
                       <h4 style={{ fontSize: '1rem', color: '#fff', marginBottom: '0.25rem' }}>{item.title || p.title}</h4>
                       <div style={{ display: 'flex', gap: '0.75rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                        <span>Size: <strong style={{ color: '#a5b4fc' }}>{item.size || 'M'}</strong></span>
-                        <span>Price: <strong style={{ color: '#818cf8' }}>${unitPrice}</strong></span>
+                        <span>Size: <strong style={{ color: '#93c5fd' }}>{item.size || 'M'}</strong></span>
+                        <span>Price: <strong style={{ color: '#60a5fa' }}>${unitPrice}</strong></span>
                       </div>
                     </div>
 
@@ -176,7 +176,7 @@ const CartPage = () => {
         <div>
           <form onSubmit={handlePlaceOrder} className="glass-panel" style={{ padding: '1.75rem' }}>
             <h3 style={{ color: '#fff', marginBottom: '1.25rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Truck size={20} color="#ec4899" /> Shipping & Payment Details
+              <Truck size={20} color="#facc15" /> Shipping & Payment Details
             </h3>
 
             {errorMsg && (
@@ -261,9 +261,9 @@ const CartPage = () => {
                       style={{
                         padding: '0.6rem',
                         borderRadius: 'var(--radius-md)',
-                        background: paymentMethod === method ? 'rgba(99, 102, 241, 0.2)' : 'rgba(255,255,255,0.05)',
+                        background: paymentMethod === method ? 'rgba(37, 99, 235, 0.25)' : 'rgba(255,255,255,0.05)',
                         border: paymentMethod === method ? '1px solid var(--primary)' : '1px solid var(--border-glass)',
-                        color: paymentMethod === method ? '#fff' : 'var(--text-muted)',
+                        color: paymentMethod === method ? '#ffffff' : 'var(--text-muted)',
                         fontWeight: '700',
                         fontSize: '0.85rem',
                         cursor: 'pointer'
@@ -288,7 +288,7 @@ const CartPage = () => {
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', color: '#fff', fontSize: '1.25rem', fontWeight: '900' }}>
                 <span>Total Amount</span>
-                <span style={{ color: '#818cf8' }}>${grandTotal}</span>
+                <span style={{ color: '#60a5fa' }}>${grandTotal}</span>
               </div>
             </div>
 

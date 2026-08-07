@@ -49,13 +49,13 @@ const ProductsPage = () => {
       
       {/* Header */}
       <div style={{ marginBottom: '2rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#818cf8', marginBottom: '0.25rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#60a5fa', marginBottom: '0.25rem' }}>
           <Sparkles size={18} />
           <span style={{ fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
             Comprehensive Product Catalog
           </span>
         </div>
-        <h1 style={{ fontSize: '2.5rem', color: '#fff' }}>Discover ShopEZ Collections</h1>
+        <h1 style={{ fontSize: '2.5rem', color: '#ffffff' }}>Discover ShopEZ Collections</h1>
       </div>
 
       {/* Filter & Controls Panel */}

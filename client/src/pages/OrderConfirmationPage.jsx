@@ -62,7 +62,7 @@ const OrderConfirmationPage = () => {
           Thank You For Your Order!
         </h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginBottom: '2rem' }}>
-          Order Reference: <strong style={{ color: '#818cf8' }}>#{order._id}</strong>
+          Order Reference: <strong style={{ color: '#60a5fa' }}>#{order._id}</strong>
         </p>
 
         {/* Receipt Box */}
@@ -88,7 +88,7 @@ const OrderConfirmationPage = () => {
 
           {/* Items Purchased */}
           <div style={{ borderTop: '1px solid var(--border-glass)', paddingTop: '1rem' }}>
-            <span style={{ fontSize: '0.85rem', color: '#818cf8', fontWeight: '700', display: 'block', marginBottom: '0.75rem' }}>
+            <span style={{ fontSize: '0.85rem', color: '#60a5fa', fontWeight: '700', display: 'block', marginBottom: '0.75rem' }}>
               ITEMS IN ORDER
             </span>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -101,7 +101,7 @@ const OrderConfirmationPage = () => {
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Size: {item.size || 'M'} | Qty: {item.quantity}</span>
                     </div>
                   </div>
-                  <span style={{ color: '#818cf8', fontWeight: '700' }}>
+                  <span style={{ color: '#60a5fa', fontWeight: '700' }}>
                     ${(item.price * item.quantity).toFixed(2)}
                   </span>
                 </div>
@@ -111,7 +111,7 @@ const OrderConfirmationPage = () => {
 
           <div style={{ borderTop: '1px solid var(--border-glass)', paddingTop: '1rem', marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ color: '#fff', fontWeight: '700' }}>Grand Total Paid</span>
-            <span style={{ color: '#818cf8', fontSize: '1.3rem', fontWeight: '900' }}>${order.totalAmount?.toFixed(2)}</span>
+            <span style={{ color: '#60a5fa', fontSize: '1.3rem', fontWeight: '900' }}>${order.totalAmount?.toFixed(2)}</span>
           </div>
 
         </div>

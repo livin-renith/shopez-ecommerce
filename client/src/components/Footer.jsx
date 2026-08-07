@@ -27,7 +27,7 @@ const Footer = () => {
                 width: '36px',
                 height: '36px',
                 borderRadius: '10px',
-                background: 'linear-gradient(135deg, #6366f1 0%, #ec4899 100%)',
+                background: 'linear-gradient(135deg, #2563eb 0%, #f59e0b 100%)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center'
@@ -91,7 +91,7 @@ const Footer = () => {
             © 2026 ShopEZ Retail Inc. All rights reserved. Built with modern web standards.
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            Crafted with <Heart size={14} color="#ec4899" fill="#ec4899" /> for Mentor Review
+            Crafted with <Heart size={14} color="#facc15" fill="#facc15" /> for Mentor Review
           </div>
         </div>
 

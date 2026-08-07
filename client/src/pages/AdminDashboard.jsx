@@ -174,7 +174,7 @@ const AdminDashboard = () => {
       {/* Admin Portal Header */}
       <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '2rem' }}>
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#ec4899', marginBottom: '0.25rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#facc15', marginBottom: '0.25rem' }}>
             <ShieldCheck size={20} />
             <span style={{ fontSize: '0.85rem', fontWeight: '800', letterSpacing: '0.1em' }}>
               ADMINISTRATOR MANAGEMENT CONSOLE
@@ -259,7 +259,7 @@ const AdminDashboard = () => {
           {/* Key Metrics Grid */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
             <div className="glass-panel" style={{ padding: '1.5rem', display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(99, 102, 241, 0.15)', color: '#818cf8' }}>
+              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(37, 99, 235, 0.18)', color: '#60a5fa' }}>
                 <DollarSign size={32} />
               </div>
               <div>
@@ -269,7 +269,7 @@ const AdminDashboard = () => {
             </div>
 
             <div className="glass-panel" style={{ padding: '1.5rem', display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(236, 72, 153, 0.15)', color: '#f472b6' }}>
+              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(245, 158, 11, 0.18)', color: '#facc15' }}>
                 <ShoppingBag size={32} />
               </div>
               <div>
@@ -279,7 +279,7 @@ const AdminDashboard = () => {
             </div>
 
             <div className="glass-panel" style={{ padding: '1.5rem', display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(6, 182, 212, 0.15)', color: '#22d3ee' }}>
+              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(56, 189, 248, 0.18)', color: '#38bdf8' }}>
                 <Package size={32} />
               </div>
               <div>
@@ -289,7 +289,7 @@ const AdminDashboard = () => {
             </div>
 
             <div className="glass-panel" style={{ padding: '1.5rem', display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24' }}>
+              <div style={{ padding: '1rem', borderRadius: '16px', background: 'rgba(245, 158, 11, 0.22)', color: '#fde047' }}>
                 <Users size={32} />
               </div>
               <div>
@@ -316,9 +316,9 @@ const AdminDashboard = () => {
                 <tbody>
                   {ordersList.slice(0, 5).map((ord) => (
                     <tr key={ord._id} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-                      <td style={{ padding: '0.75rem', color: '#a5b4fc' }}>#{ord._id.substring(ord._id.length - 8)}</td>
+                      <td style={{ padding: '0.75rem', color: '#93c5fd' }}>#{ord._id.substring(ord._id.length - 8)}</td>
                       <td style={{ padding: '0.75rem', color: '#fff' }}>{ord.name}</td>
-                      <td style={{ padding: '0.75rem', color: '#818cf8', fontWeight: '700' }}>${ord.totalAmount?.toFixed(2)}</td>
+                      <td style={{ padding: '0.75rem', color: '#60a5fa', fontWeight: '700' }}>${ord.totalAmount?.toFixed(2)}</td>
                       <td style={{ padding: '0.75rem' }}>{ord.paymentMethod}</td>
                       <td style={{ padding: '0.75rem' }}>
                         <span className="badge badge-primary">{ord.status}</span>
@@ -450,7 +450,7 @@ const AdminDashboard = () => {
                         <span style={{ fontWeight: '600' }}>{p.title}</span>
                       </td>
                       <td style={{ padding: '0.75rem' }}>{p.category}</td>
-                      <td style={{ padding: '0.75rem', color: '#818cf8', fontWeight: '700' }}>${p.price}</td>
+                      <td style={{ padding: '0.75rem', color: '#60a5fa', fontWeight: '700' }}>${p.price}</td>
                       <td style={{ padding: '0.75rem' }}>{p.stock}</td>
                       <td style={{ padding: '0.75rem' }}>
                         <button onClick={() => handleDeleteProduct(p._id)} style={{ background: 'transparent', border: 'none', color: '#f87171', cursor: 'pointer' }}>
@@ -525,7 +525,7 @@ const AdminDashboard = () => {
               <tbody>
                 {ordersList.map((ord) => (
                   <tr key={ord._id} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-                    <td style={{ padding: '0.75rem', color: '#a5b4fc' }}>#{ord._id.substring(ord._id.length - 8)}</td>
+                    <td style={{ padding: '0.75rem', color: '#93c5fd' }}>#{ord._id.substring(ord._id.length - 8)}</td>
                     <td style={{ padding: '0.75rem', color: '#fff' }}>
                       <div>{ord.name}</div>
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>{ord.mobile} | {ord.pincode}</span>
@@ -535,7 +535,7 @@ const AdminDashboard = () => {
                         <div key={idx} style={{ fontSize: '0.8rem' }}>• {it.title} (x{it.quantity})</div>
                       ))}
                     </td>
-                    <td style={{ padding: '0.75rem', color: '#818cf8', fontWeight: '700' }}>${ord.totalAmount?.toFixed(2)}</td>
+                    <td style={{ padding: '0.75rem', color: '#60a5fa', fontWeight: '700' }}>${ord.totalAmount?.toFixed(2)}</td>
                     <td style={{ padding: '0.75rem' }}>
                       <select
                         value={ord.status}

@@ -39,13 +39,13 @@ const ProductCard = ({ product }) => {
           top: '12px',
           left: '12px',
           zIndex: 2,
-          background: 'linear-gradient(135deg, #ec4899 0%, #be185d 100%)',
-          color: '#fff',
-          fontWeight: '800',
+          background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+          color: '#070a12',
+          fontWeight: '900',
           fontSize: '0.75rem',
-          padding: '0.25rem 0.6rem',
+          padding: '0.25rem 0.65rem',
           borderRadius: 'var(--radius-full)',
-          boxShadow: '0 4px 10px rgba(236, 72, 153, 0.4)'
+          boxShadow: '0 4px 12px rgba(245, 158, 11, 0.45)'
         }}>
           {product.discount}% OFF
         </div>
@@ -57,10 +57,10 @@ const ProductCard = ({ product }) => {
         top: '12px',
         right: '12px',
         zIndex: 2,
-        background: 'rgba(9, 13, 22, 0.7)',
+        background: 'rgba(7, 10, 18, 0.8)',
         backdropFilter: 'blur(8px)',
         border: '1px solid var(--border-glass)',
-        color: '#a5b4fc',
+        color: '#93c5fd',
         fontWeight: '600',
         fontSize: '0.7rem',
         padding: '0.25rem 0.6rem',
@@ -76,7 +76,7 @@ const ProductCard = ({ product }) => {
         width: '100%',
         paddingTop: '80%',
         overflow: 'hidden',
-        background: 'rgba(0, 0, 0, 0.2)'
+        background: 'rgba(0, 0, 0, 0.3)'
       }}>
         <img
           src={product.mainImg}
@@ -100,11 +100,11 @@ const ProductCard = ({ product }) => {
         
         {/* Category & Rating */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-          <span style={{ fontSize: '0.75rem', color: 'var(--accent-cyan)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <span style={{ fontSize: '0.75rem', color: '#38bdf8', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             {product.category}
           </span>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#fcd34d', fontSize: '0.8rem', fontWeight: '700' }}>
-            <Star size={14} fill="#fcd34d" color="#fcd34d" />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#facc15', fontSize: '0.8rem', fontWeight: '700' }}>
+            <Star size={14} fill="#facc15" color="#facc15" />
             <span>{product.rating || 4.8}</span>
           </div>
         </div>
@@ -113,7 +113,7 @@ const ProductCard = ({ product }) => {
         <Link to={`/products/${product._id}`} style={{
           fontSize: '1.05rem',
           fontWeight: '700',
-          color: '#fff',
+          color: '#ffffff',
           marginBottom: '0.75rem',
           lineHeight: '1.4',
           display: '-webkit-box',
@@ -127,7 +127,7 @@ const ProductCard = ({ product }) => {
 
         {/* Price Row */}
         <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginBottom: '1.25rem', marginTop: 'auto' }}>
-          <span style={{ fontSize: '1.35rem', fontWeight: '900', color: '#818cf8' }}>
+          <span style={{ fontSize: '1.35rem', fontWeight: '900', color: '#60a5fa' }}>
             ${discountedPrice}
           </span>
           {product.discount > 0 && (
@@ -147,9 +147,9 @@ const ProductCard = ({ product }) => {
               width: '100%',
               fontSize: '0.85rem',
               padding: '0.6rem',
-              color: '#f472b6',
-              borderColor: 'rgba(236, 72, 153, 0.4)',
-              background: 'rgba(236, 72, 153, 0.1)'
+              color: '#facc15',
+              borderColor: 'rgba(245, 158, 11, 0.4)',
+              background: 'rgba(245, 158, 11, 0.1)'
             }}
           >
             <ShieldCheck size={16} /> Manage in Admin Portal

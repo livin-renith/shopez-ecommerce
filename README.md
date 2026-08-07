@@ -9,6 +9,8 @@
 > [!IMPORTANT]
 > - ⚡ **Live Render Backend API**: [https://shopez-backend-2938.onrender.com](https://shopez-backend-2938.onrender.com)
 > - 📦 **GitHub Repository**: [https://github.com/livin-renith/shopez-ecommerce](https://github.com/livin-renith/shopez-ecommerce)
+> - 📝 **Project Documentation**: [https://drive.google.com/drive/folders/1uisGmDzfc2-YAnApvKAvweCVMk762Ewx?usp=sharing]
+
 > - 🔑 **Pre-configured Admin Account**:
 >   - **Account Email**: `admin@gmail.com`
 >   - **Password**: `admin123`

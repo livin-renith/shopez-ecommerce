@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Use VITE_API_URL, production Render API, or local proxy /api
-const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://shopez-backend-2938.onrender.com' : '/api');
+// Use VITE_API_URL or default to local backend on localhost:8000
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 const API = axios.create({
   baseURL: API_BASE.endsWith('/api') ? API_BASE : `${API_BASE.replace(/\/$/, '')}/api`,
